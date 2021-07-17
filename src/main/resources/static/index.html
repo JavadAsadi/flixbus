@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <script src="assets/libs/angular/angular.js"></script>
+    <script src="assets/libs/angular/angular-resource.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="assets/libs/flash/angular-flash.min.css" />
+    <script src="assets/libs/flash/angular-flash.min.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="assets/libs/ng_table/ng-table.css"/>
+    <script src="assets/libs/ng_table/ng-table.js"></script>
+
+    <script src="app/components/agency/agency.module.js"></script>
+    <script src="app/components/agency/agency.service.js"></script>
+    <script src="app/components/agency/agency.controllers.js" ></script>
+    <script src="app/components/flix.module.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="assets/CSS/bootstrap/bootstrap.css"/>
+    <link type="text/css" rel="stylesheet" href="assets/CSS/bootstrap/bootstrap-theme.css"/>
+
+    <script src="assets/libs/ng_route/angular-route.js"></script>
+    <script src="assets/libs/angular-dialog-service/dialogs.min.js"></script>
+    <script src="assets/libs/angular-sanitize/angular-sanitize.js"></script>
+    <script src="assets/libs/angular-ui-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="assets/libs/jquery-validation/jquery-1.11.1.js"></script>
+    <script src="assets/libs/jquery-validation/jquery.validate.js"></script>
+
+</head>
+<body>
+    <div ng-app="flix">
+        <flash-message>
+            duration="2000"
+            show-close="true"
+        </flash-message>
+        <div class = "container">
+            <div ng-view></div>
+        </div>
+    </div>
+
+</body>
+</html>
